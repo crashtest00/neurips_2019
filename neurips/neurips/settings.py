@@ -20,6 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# Yo knucklehead. Deprecate this secret.
 SECRET_KEY = '6_lmf@b9tq#8e0is52(=9k2okj)cvjyvytr_rh3^%!43l(z_kw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'neurips.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neurips_2019',
+        'NAME': 'neurips_2019', #TODO change, then move to secret
         'USER': 'postgres', #TO DO: Create new role
-        'PASSWORD': 'gr33nbr!er',
+        'PASSWORD': 'gr33nbr!er', #TODO change, then move to secret
         'HOST': '',
         'PORT': '',
     }
