@@ -8,3 +8,5 @@ https://docs.docker.com/compose/install/
 - Copy dockerfile, requirements.txt, and docker-compose.yaml into project directory
 - Start Docker daemon (sudo dockerd)
 - Run docker-compose up
+
+- For each deploy, `docker system prune` should reset docker to a zero state without nuking the DB. Test this...obvs...
